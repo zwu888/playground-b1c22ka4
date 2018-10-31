@@ -1,19 +1,29 @@
-# Welcome!
-
-This C++ template lets you get started quickly with a simple one-page playground.
 
 ```C++ runnable
 #include <iostream>
 
-using namespace std;
-
-int main() 
+namespace standards
 {
-    cout << "Hello, World!";
+    struct datastructure
+    {
+    };
+
+    void foo(const datastructure& ds)
+    {
+    }
+
+    void bar()
+    {
+    }
+}
+
+int main(int argc, char** argv)
+{
+    standards::datastructure ds;
+
+    foo(ds);
+
+    bar();
+
     return 0;
 }
-```
-
-# Advanced usage
-
-If you want a more complex example (external libraries, viewers...), use the [Advanced C++ template](https://tech.io/select-repo/598)
